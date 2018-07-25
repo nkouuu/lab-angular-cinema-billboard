@@ -1,0 +1,72 @@
+<div class="movie-info">
+  
+  <div class="movie-header">
+    <p>ROOM:{{actualMovie.room}}</p>
+
+    <h2>{{actualMovie.title}}</h2>
+
+  </div>
+  <div class="movie-body">
+    <div class="movie-poster">
+        <img src="{{actualMovie.poster}}" alt="" >
+
+    </div>
+      <div class="movie-details">
+          <div class="detail ">
+              <p><b>Genre</b> </p>
+                <ul>
+                    <li *ngFor="let genre of actualMovie.genres">
+                      <p>{{genre}}</p>
+                    </li>
+                  </ul>
+            </div>
+            <div class="detail ">
+                <p><b>Year</b> </p>
+                  <ul>
+                      <li >
+                        <p>{{actualMovie.year}}</p>
+                      </li>
+                    </ul>
+              </div>
+              <div class="detail ">
+                  <p><b>Director</b> </p>
+                    <ul>
+                        <li >
+                          <p>{{actualMovie.director}}</p>
+                        </li>
+                      </ul>
+                </div>
+                <div class="detail ">
+                    <p><b>Actors</b> </p>
+                      <ul>
+                          <li *ngFor="let actor of actualMovie.actors">
+                            <p>{{actor}}</p>
+                          </li>
+                        </ul>
+                  </div>
+
+        <div class="detail ">
+          <p><b>Schedule</b> </p>
+            <ul>
+                <li *ngFor="let hour of actualMovie.hours">
+                  <p>{{hour}}</p>
+                </li>
+              </ul>
+        </div>
+        <div class="detail">
+            <p><b>Synopsis</b> </p>
+              
+          </div>
+
+          <div>
+              <p>
+                  {{actualMovie.synopsis}}
+                </p>
+          </div>
+          <button [routerLink]="['/']" id="btn-home">HOME</button>
+
+      </div>
+  </div>
+  
+
+</div>

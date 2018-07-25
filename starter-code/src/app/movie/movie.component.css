@@ -1,0 +1,59 @@
+.movie-header > *{
+    display:inline-block;
+    margin-right:10px;
+}
+
+
+.movie-info{
+    text-align: center;
+}
+
+.movie-info *{
+    word-wrap: break-word
+}
+p{
+    word-wrap: break-word;
+    margin:5px 5px
+
+}
+
+.movie-body{
+    display:flex;
+    justify-content: center;
+
+
+}
+.movie-body .movie-poster{
+    width: 40%;
+}
+.movie-poster img{
+    width: 60%;
+}
+
+.movie-details > *{
+    display:flex;
+}
+
+ul{
+    list-style: none;
+    margin:0 20px;
+    padding:0;
+}
+
+
+.movie-details{
+    width: 40%
+}
+
+.synopsis {
+display:flex;
+flex-direction: column
+}
+
+#btn-home{
+    background: rgb(80, 80, 184);
+    color:white;
+    border-radius: 20px;
+    height: 50px;
+    
+}
